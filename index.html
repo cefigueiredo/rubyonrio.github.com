@@ -59,7 +59,11 @@ futute_events:
   </section>
 </div>
 
-<div class="avatars"></div>
+<div class="avatars">
+  {% for img in site.data.gravatars %}
+    <img src="http://www.gravatar.com/avatar/{{ img.gravatar['hash'] }}.png" />
+  {% endfor %}
+</div>
 
 <div class="containner">
   <section class="meetings">
